@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <title>User Profile Sidebar - Bootsnipp.com</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <script src="js/jquery-1.10.2.min.js" ></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+    <!-- NAVBAR-->
+     <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">SIA UMS</a>
+    </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="logout.php" id="logout"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- NAVBAR-->
+    <div class="container">
+    <div class="row profile">
+		<div class="col-md-3">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USERPIC -->
+				<div class="profile-userpic">
+					<!--<img src="images/ums.png" class="img-responsive" alt="">-->
+				</div>
+                
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				
+                <div class="profile-usertitle">
+					<div class="profile-usertitle-name">
+						Ade Guntoro
+					</div>
+					<div class="profile-usertitle-job">
+						Informatika
+					</div>
+				</div>
+				<!-- END SIDEBAR USER TITLE -->
+				<!-- SIDEBAR BUTTONS -->
+				<div class="profile-userbuttons">
+					<button type="button" class="btn btn-success btn-sm">e-mail</button>
+					<button type="button" class="btn btn-danger btn-sm">Message</button>
+				</div>
+				<!-- END SIDEBAR BUTTONS -->
+				<!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+					<ul class="nav">
+						<li>
+							<a href="#">
+							<i class="glyphicon glyphicon-home"></i>
+                            About Profile
+                            </a>
+						</li>
+						<li>
+							<a href="akun.html">
+							<i class="glyphicon glyphicon-user"></i>
+							Account Settings </a>
+						</li>
+						<li>
+							<a href="#">
+							<i class="glyphicon glyphicon-ok"></i>
+							Tasks </a>
+						</li>
+                        
+						<li>
+							<a href="#">
+							<i class="glyphicon glyphicon-flag"></i>
+							Help </a>
+						</li>
+                        
+                        <li class="active">
+							<a href="krs.html">
+							<i class="glyphicon glyphicon-list"></i>
+							KRS </a>
+						</li>
+
+                        <li>
+							<a href="khs.html">
+							<i class="glyphicon glyphicon-list"></i>
+							KHS </a>
+						</li>
+
+                        
+                        <li>
+							<a href="jadwalkuliah.html">
+							<i class="glyphicon glyphicon-calendar"></i>
+							Jadwal Kuliah </a>
+						</li>
+                        
+					</ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+		</div>
+		<div class="col-md-9">
+            <div class="profile-content">
+            </div> 
+        </div>
+        <!-- #### -->
+            </div>
+		</div>
+	</div>
+</div>
+<center>
+
+</center>
+<br>
+<br>
+<!--	<script type="text/javascript">
+	
+	</script>-->
+</body>
+</html>
